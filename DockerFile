@@ -1,0 +1,12 @@
+FROM python:3.8-slim-buster
+
+WORKDIR /db_final_project
+
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+ENV CASSANDRA_CONTACT_POINTS cassandra
+
+CMD ["python", "app.py"]
