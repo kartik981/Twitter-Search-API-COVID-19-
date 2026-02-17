@@ -22,7 +22,7 @@ Step 5: Start Cassandra
 
 5.2: cqlsh
 
-Step 5: run producer.py and consumer.py
+Step 6: run producer.py and consumer.py
 
 
 TO activate the virtual env
